@@ -1,0 +1,7 @@
+#Pasos para descargar el ambiente de trabajo Visual Studio Code#
+Como primer paso vamos a instalar el SDK de .NET Core versión 2.2, el cual puedes bajar directamente de dotnet.microsoft.com. 
+Elige la instalación para tu sistema operativo y arquitectura (64 o 32 bits).
+El framework, incluye un programa de línea de comandos (en inglés CLI) llamado dotnet con el cual vamos a administrar nuestro código 
+y los ejecutables de .NET. Vamos a revisar que esté instalado, para esto abre una terminal. En windows se tienen cmd.exe y Power Shell,
+en macOS y Linux tenemos la Terminal.
+Ingresamos a la pagina code.visualstudio.com es de donde lo bajaremos
