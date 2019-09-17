@@ -34,7 +34,7 @@ Una vez descargado lo configuramos para el lenguaje de programacion C# y es dodn
 ![](https://i.ibb.co/DpzTVj0/70883477-706122739854394-7935259702097608704-n.png)
 
 
-## 2) Instalación de git. conectado a tu cuenta de GitHub y VSC.
+## 3) Instalación de git. conectado a tu cuenta de GitHub y VSC.
 
 
 Para poder utilizar GitHub de manera remota debemos instalar GIT para eso ingresamos a https://git-scm.com/downloads y lo instalamos para nuestro sistema operativo.
