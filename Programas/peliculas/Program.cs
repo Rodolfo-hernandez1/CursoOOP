@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
+namespace peliculas
+{
 class Pelicula
 {
    private String Titulo;
@@ -23,8 +24,7 @@ public void setAño(Int16 Año)
 
 
 
-namespace peliculas
-{
+
     class Program
     {
         static void Main()
