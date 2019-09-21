@@ -1,18 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.Generic;   
 namespace peliculas
 {
-class Pelicula
+    class Pelicula
 {
    private String Titulo;
    private Int16 Año;
    ////private String Pais;
   // private String Director;
 
-
-  public void setTitulo(string Titulo)
+  public void setTitulo(String Titulo)
   {this.Titulo=Titulo;}
-  public string getTitulo()
+  public String getTitulo()
   {return this.Titulo;}
 
 public void setAño(Int16 Año)
@@ -30,10 +29,10 @@ public void setAño(Int16 Año)
         static void Main()
         {
             Pelicula p1= new Pelicula();
-            p1.SetTitulo("La la land");
-            p1.SetAño("2016");
+            p1.setTitulo("La la land");
+            p1.setAño("2016");
 
-            Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
+            Console.WriteLine("Pelicula: {0}, Ano: {1}", p1.getTitulo(), p1.getAño());
 
 
 
