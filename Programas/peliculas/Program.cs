@@ -9,20 +9,20 @@ namespace peliculas
    ////private String Pais;
   // private String Director;
 
-  public void setTitulo(String Titulo)
+  public void setTitulo(String Titulo)  //como los atrivutos son privados tenemos que usar estos meetodos
   {this.Titulo=Titulo;}
-  public String getTitulo()
+  public String getTitulo()//como los atrivutos son privados tenemos que usar estos meetodos
   {return this.Titulo;}
 
-public void setAño(Int16 Año)
+public void setAño(Int16 Año)//como los atrivutos son privados tenemos que usar estos meetodos
   {this.Año=Año;}
-  public Int16 getAño()
+  public Int16 getAño()//como los atrivutos son privados tenemos que usar estos meetodos
   {return this.Año;}
 
 
 
 
-    public Pelicula(String Titulo,Int16 Año)
+    public Pelicula(String Titulo,Int16 Año)// este es el constructor
         {
             this.Titulo= Titulo;
             this.Año=Año;
@@ -37,15 +37,21 @@ public void setAño(Int16 Año)
         static void Main()
         {
             Pelicula p1= new Pelicula("La la land",2016);
-            //p1.setTitulo("La la land");
-           // p1.setAño(2016);
+            //p1.setTitulo("La la land"); //Se utiliza cuando los atrivutos son privados
+           // p1.setAño(2016);             //se uiliza cunado los atrivutos son privados
                 
-                
+            List<Pelicula> Peliculas  = new List<Pelicula>();
+
+            Pelicula.Add(new Pelicula ("Rambo Last Blood"));
+            Pelicula.Add(new Pelicula ("It"));
+            Pelicula.Add(new Pelicula ("John Wick 3"));
+
+             
                 
             Console.WriteLine("Pelicula: {0}, Ano: {1}", p1.getTitulo(), p1.getAño());
 
 
-             //Pelicula pelicula1 =new Pelicula();
+             //Pelicula pelicula1 =new Pelicula();    //De aqui hacia abajo se utiliza cuando los atributos son publicos
 
              //pelicula1.Titulo = "La forma del agua";     
             // /pelicula1.Año = 2017;
