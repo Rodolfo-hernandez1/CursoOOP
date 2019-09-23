@@ -18,8 +18,16 @@ public void setAño(Int16 Año)
   {this.Año=Año;}
   public Int16 getAño()
   {return this.Año;}
- 
-}
+
+
+
+
+    public Pelicula(String Titulo,Int16 Año)
+        {
+            this.Titulo= Titulo;
+            this.Año=Año;
+        }
+ }
 
 
 
@@ -28,10 +36,12 @@ public void setAño(Int16 Año)
     {
         static void Main()
         {
-            Pelicula p1= new Pelicula();
-            p1.setTitulo("La la land");
-            p1.setAño(2016);
-
+            Pelicula p1= new Pelicula("La la land",2016);
+            //p1.setTitulo("La la land");
+           // p1.setAño(2016);
+                
+                
+                
             Console.WriteLine("Pelicula: {0}, Ano: {1}", p1.getTitulo(), p1.getAño());
 
 
