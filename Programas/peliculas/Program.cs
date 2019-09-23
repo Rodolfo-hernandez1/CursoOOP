@@ -30,21 +30,9 @@ public void setAño(Int16 Año)
         {
             Pelicula p1= new Pelicula();
             p1.setTitulo("La la land");
-            p1.setAño("2016");
+            p1.setAño(2016);
 
             Console.WriteLine("Pelicula: {0}, Ano: {1}", p1.getTitulo(), p1.getAño());
-
-
-
-
-
-
-
-
-
-
-
-
 
 
              //Pelicula pelicula1 =new Pelicula();
