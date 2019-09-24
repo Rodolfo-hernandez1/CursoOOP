@@ -36,19 +36,20 @@ public void setAño(Int16 Año)//como los atrivutos son privados tenemos que usa
     {
         static void Main()
         {
-            Pelicula p1= new Pelicula("La la land",2016);
+           // Pelicula p1= new Pelicula("La la land",2016);
             //p1.setTitulo("La la land"); //Se utiliza cuando los atrivutos son privados
            // p1.setAño(2016);             //se uiliza cunado los atrivutos son privados
                 
-            List<Pelicula> Peliculas  = new List<Pelicula>();
+            List<String> Peliculas  = new List<String>();
 
-            Pelicula.Add(new Pelicula ("Rambo Last Blood"));
-            Pelicula.Add(new Pelicula ("It"));
-            Pelicula.Add(new Pelicula ("John Wick 3"));
+            Peliculas.Add("Rambo Last Blood");
+            Peliculas.Add("It");
+            Peliculas.Add("John Wick 3");
 
-             
+             foreach(String Pelicula in Peliculas)
+            Console.WriteLine(Pelicula);
                 
-            Console.WriteLine("Pelicula: {0}, Ano: {1}", p1.getTitulo(), p1.getAño());
+            //Console.WriteLine("Pelicula: {0}, Ano: {1}", p1.getTitulo(), p1.getAño());
 
 
              //Pelicula pelicula1 =new Pelicula();    //De aqui hacia abajo se utiliza cuando los atributos son publicos
