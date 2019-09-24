@@ -8,6 +8,7 @@ namespace peliculas
    private Int16 Año;
    ////private String Pais;
   // private String Director;
+  private String Actor;
 
   public void setTitulo(String Titulo)  //como los atrivutos son privados tenemos que usar estos meetodos
   {this.Titulo=Titulo;}
@@ -19,7 +20,10 @@ public void setAño(Int16 Año)//como los atrivutos son privados tenemos que usa
   public Int16 getAño()//como los atrivutos son privados tenemos que usar estos meetodos
   {return this.Año;}
 
-
+  public void setActor(String Actor)  //como los atrivutos son privados tenemos que usar estos meetodos
+  {this.Actor=Actor;}
+  public String getActor()//como los atrivutos son privados tenemos que usar estos meetodos
+  {return this.Actor;}
 
 
     public Pelicula(String Titulo,Int16 Año)// este es el constructor
@@ -36,20 +40,24 @@ public void setAño(Int16 Año)//como los atrivutos son privados tenemos que usa
     {
         static void Main()
         {
-           // Pelicula p1= new Pelicula("La la land",2016);
-            //p1.setTitulo("La la land"); //Se utiliza cuando los atrivutos son privados
-           // p1.setAño(2016);             //se uiliza cunado los atrivutos son privados
-                
-            List<String> Peliculas  = new List<String>();
+           Pelicula p1= new Pelicula("La la land",2016);
+            p1.setTitulo("La la land"); //Se utiliza cuando los atrivutos son privados
+            p1.setAño(2016);             //se uiliza cunado los atrivutos son privados
+            p1.setActor("Ryan Gosling y Emma Stone");
+           
 
-            Peliculas.Add("Rambo Last Blood");
-            Peliculas.Add("It");
-            Peliculas.Add("John Wick 3");
 
-             foreach(String Pelicula in Peliculas)
-            Console.WriteLine(Pelicula);
+
+           // List<String> Peliculas  = new List<String>();  // De aqui al foreach se utiliza para la lista
+
+           //// Peliculas.Add("Rambo Last Blood");
+           // Peliculas.Add("It");
+           /// Peliculas.Add("John Wick 3");
+
+            // foreach(String Pelicula in Peliculas)
+           // Console.WriteLine(Pelicula);
                 
-            //Console.WriteLine("Pelicula: {0}, Ano: {1}", p1.getTitulo(), p1.getAño());
+            Console.WriteLine("Pelicula: {0}, Año: {1} , Actor: {2}", p1.getTitulo(), p1.getAño(),p1.getActor());
 
 
              //Pelicula pelicula1 =new Pelicula();    //De aqui hacia abajo se utiliza cuando los atributos son publicos
