@@ -1,21 +1,49 @@
 ﻿using System;
 
-namespace Practica
+namespace Prueba
 {
-
-    class Duplicador
+    class Persona
     {
-        public void duplica(int x){
-            x= x*2;
+        public string nombre;
+        public string apellido;
+
+
+        public Persona()  //constructor
+        {
+            nombre = "Fulano";
+            apellido = "De tal";
         }
-        
     }
 
+    class Anonymous
+{
+    public static void Anonimiza(Persona p)
+    {
+        p.nombre = "xxxxx";
+        p.apellido = "xxxxxx";
+    }
+
+    public static void cambia(ref Persona p)
+    {
+        p = new Persona ();
+        p.nombre= "New";
+    }
+}
+
     class Program
+    
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           
+           Persona p= new Persona();
+           Console.WriteLine(p.nombre);
+           Anonymous.Anonimiza(p);
+           Anonymous.cambia(ref p);
+           Console.WriteLine(p.nombre); 
+
+           
         }
     }
 }
+
