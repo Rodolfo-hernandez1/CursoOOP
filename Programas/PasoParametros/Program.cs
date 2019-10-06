@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace Prueba
 {
     class Persona
@@ -39,7 +39,7 @@ namespace Prueba
     class Program
     
     {
-    static void duplica(in int x) // in es estricto no se puede modificar, se pasa por referencia se vigila que no se modifique
+    static void duplica(int x) // in es estricto no se puede modificar, se pasa por referencia se vigila que no se modifique
     {
         x= x*2;
     }
