@@ -1,44 +1,62 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace PracticaDuracion
+namespace Duracion
 {
     class Duracion
     {
         private int Horas;
         private int Minutos;
-        private int Segundos;
+        private int segundos;
 
-    public Duracion(int h, int m,int s)
-    {
-        Horas=h;
-        Minutos=m;
-        Segundos=s;
+        public Duracion (int H,int M,int S)
+        {
+            Horas = H;
+            Minutos = M;
+            segundos = S;
+
+        }        
+        
+
+        public int Total()
+        {
+            int conver = 0;
+
+            int Ss = 0;
+            int Hh = Horas;
+            int Mm = Minutos;
+            
+            conver = Hh * 60;
+            Ss = Ss + conver + Mm;
+            return Ss;      
+        }
+
+        
+
+        public void print()
+        {
+            Console.WriteLine(Horas + ":" + Minutos + ":" + segundos);
+            
+        }
     }
-
-    public void Imprime()
-    {
-        Console.WriteLine("Horas:{0},Minutos:{1},Segundos:{2}",Horas,Minutos,Segundos);
-    }
-
-
-
-
-    }
-
-
 
     class Program
     {
         static void Main(string[] args)
         {
-            Duracion Horas= new Duracion(2,0,0);
-            Duracion Minutos= new Duracion(0,10,0);
-            Duracion Segundos= new Duracion(0,0,20);
+            Duracion Horas = new Duracion(03, 10, 11); // 135
+            Duracion Minutos = new Duracion(00, 20, 19); //60
+            Duracion Segundos = new Duracion(0, 02, 30); // 120
 
-            Horas.Imprime();
-            Minutos.Imprime();
-            Segundos.Imprime();
+            Horas.print();
+            Minutos.print();
+            Segundos.print();
+
+            Console.WriteLine("Total horas a minutos ess "+Horas.Total());
+            Console.WriteLine("Total Minutos son " + Minutos.Total());
+            Console.WriteLine("Total Minutos de los segundos  es " + Segundos.Total());
+
+            Console.ReadLine();
         }
     }
 }
-
