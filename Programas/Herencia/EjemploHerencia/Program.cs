@@ -33,7 +33,10 @@ namespace EjemploHerencia
             this.bajo=bajo;
         }
 
-        public void
+        public void Afina()
+        {
+            Console.WriteLine("{0} Afinando su bajo {1}",nombre,bajo);
+        }
 
 
 
@@ -48,7 +51,14 @@ namespace EjemploHerencia
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Musico tom = new Musico("Tom");
+            bajista flea = new bajista("Flea","Gibson");
+
+            tom.saluda();
+            flea.saluda();
+            tom.Afina();
+            flea.Afina();
+
         }
     }
 }
