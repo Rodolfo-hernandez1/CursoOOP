@@ -5,8 +5,8 @@ namespace Dominos
 
      class Domino //clase domino 
      {
-         private readonly int  a;
-         private readonly int  b;
+         private  int  a;
+         private  int  b;
 
      public Domino(int numerator, int dominator)// constructor ya que los valores son privados
      {
