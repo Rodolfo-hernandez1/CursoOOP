@@ -40,7 +40,7 @@ namespace Musico
 
     }
 
-    class Guitarriasta:Musico
+    class Guitarrista:Musico
     {   
         private string Guitarra;
         public Guitarrista(string gui,string g):base(gui)
