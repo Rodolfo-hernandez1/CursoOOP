@@ -56,7 +56,7 @@ namespace EjemploHerencia
 
             tom.saluda();
             flea.saluda();
-            tom.Afina();
+            tom.afinar();
             flea.Afina();
 
         }
