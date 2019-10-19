@@ -2,8 +2,7 @@
 
 # Tareas:
 
-# 1) Crear Repositorio en GitHub 
-     (Realizado)
+# 1) Repositorio (https://github.com/Rodolfo-hernandez1/CursoOOP)
      
  # 2) Ejercicio de MarkDown en GitHub
      (Realizado)
