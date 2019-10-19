@@ -2,10 +2,9 @@
 
 # Tareas:
 
-# 1) Repositorio (https://github.com/Rodolfo-hernandez1/CursoOOP)
+1) [Repositorio] (https://github.com/Rodolfo-hernandez1/CursoOOP)
      
- # 2) Ejercicio de MarkDown en GitHub
-     (Realizado)
+ 2) [MarkDown: Instalacion ambiente de desarrollo](https://github.com/Rodolfo-hernandez1/CursoOOP/blob/master/SetUp/README.md)
 
-# 3) Programas Peliculas
+3) Programas Peliculas
      (Realizado)
