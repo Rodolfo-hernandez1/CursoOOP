@@ -15,7 +15,7 @@ namespace Musico
 
         public void Saludo()
         {
-        Console.WriteLine("Hola,soy {0}",nombre);
+        Console.WriteLine("Hola, soy  {0}",nombre);
         }
 
         public virtual void Afina() // se ponde virtual ya que con la lista bajista no saludaba como debe
@@ -52,8 +52,24 @@ namespace Musico
         {
             Console.WriteLine("{0}, esta afinando su Guitarra {1}",nombre,Guitarra);
         }
+    }
 
+    class Baterista:Musico
+    {
+        private string Bateria;
 
+     public Baterista(string bat,string b):base(bat)
+     {
+         Bateria=b;
+
+     }
+
+     public override void Afina()
+     {
+         Console.WriteLine("{0} esta tocando los platillos de su bateria {1}",nombre,Bateria);
+
+     }
+        
     }
     class Program
     { 
@@ -63,6 +79,7 @@ namespace Musico
             Musico tom=new Musico("Tom");
             Bajista flea=new Bajista("Flea","MusicMan");
             Guitarrista jason = new Guitarrista("Jason","Storm");
+            Baterista Lois = new Baterista("Lois","Yamaha");
            // tom.Saludo();
            // flea.Saludo();
 
@@ -73,6 +90,7 @@ namespace Musico
             grupo.Add(tom);
             grupo.Add(flea);
             grupo.Add(jason);
+            grupo.Add(Lois);
             foreach(Musico m in grupo)
                 {
                     m.Saludo();
