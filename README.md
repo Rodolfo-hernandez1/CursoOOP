@@ -17,3 +17,5 @@
 6) [Domino](https://github.com/Rodolfo-hernandez1/CursoOOP/blob/master/Programas/OperadorDomino/Program.cs)
 
 7) [Duracion](https://github.com/Rodolfo-hernandez1/CursoOOP/blob/master/Programas/CovertirHorasMinSeg/Program.cs)
+
+8) [Stack](https://github.com/Rodolfo-hernandez1/CursoOOP/blob/master/Programas/Stack/Program.cs)
