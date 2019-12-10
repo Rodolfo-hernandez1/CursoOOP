@@ -28,8 +28,7 @@ namespace Proyecto
     class ProductoArch{
         public List<Producto> productos = new List<Producto>();
 
-        public void EscribeProductosTXT(string archivo)
-        {
+        public void EscribeProductosTXT(string archivo){
         FileStream fs = new FileStream(archivo,FileMode.OpenOrCreate,FileAccess.Write);
             using(StreamWriter txtOut = new StreamWriter(fs)){
                 foreach(Producto p in productos){            
@@ -67,8 +66,8 @@ namespace Proyecto
                 productos.Add( producto);
             }
         }
-        public void LeerProductosTXT(string archivo)
-        {
+        }
+        public void LeerProductosTXT(string archivo){
         FileStream fs1 = new FileStream(archivo , FileMode.OpenOrCreate, FileAccess.Read);       
         using( StreamReader txtOut = new StreamReader(fs1))
         {
@@ -79,20 +78,17 @@ namespace Proyecto
                 productos.Add( new Producto(columnas[0],columnas[1], Double.Parse( columnas[2]), int.Parse(columnas[3]),int.Parse(columnas[4])) );
             }                        
         }
-        public void GetDepartment(int Depto){
-            IEnumerable<Producto> pds =
+        }
+        public void GetDepartment(int Dep){
+            IEnumerable<Producto> Products =
             from p in productos
-            where p.departamento == Depto
+            where p.departamento == Dep
             select p;
-            Console.WriteLine("productos del departamento: "+Depto);
-            foreach(Producto p in pds){
+            Console.WriteLine("Productos en nuestro departamento "+Dep);
+            foreach(Producto p in Products){
                 Console.WriteLine("{0}|{1}|{2}|{3}|{4}",p.codigo,p.descripcion,p.precio,p.departamento,p.likes);
             }
         }     
-    }
-
-    }
-
     }
 
 
@@ -102,15 +98,15 @@ namespace Proyecto
         static void Main(string[] args)
         {
             
-            ProductoArchivo o=new ProductoArchivo();
-            o.productos.Add(new Producto("werdfd","jabon",29.99d,2,50));
-            o.productos.Add(new Producto("dfsdgs","sabritas",14.99d,3,38));
-            o.productos.Add(new Producto("jgfxmd","pantalon",199.99d,4,12));
-            o.productos.Add(new Producto("sdnjey","shampoo",39.99d,2,60));
+            ProductoArch o=new ProductoArch();
+            o.productos.Add(new Producto("WYZ","Lapiz",10.99d,3,10));
+            o.productos.Add(new Producto("WYZX","Plumas",14.99d,4,20));
+            o.productos.Add(new Producto("WYZXR","Borrador",199.99d,3,30));
+            o.productos.Add(new Producto("WYZXRS","SacaPuntas",39.99d,4,40));
             o.EscribeProductosTXT("productos.txt");
             o.EscribeProductosBIN("productos.bin");
-            o.LeeProductosTXT("productos.txt");
-            o.GetDepartment(2);
+            o.LeerProductosTXT("productos.txt");
+            o.GetDepartment(3);
             
         }   
      }
